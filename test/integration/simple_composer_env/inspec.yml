@@ -1,0 +1,12 @@
+name: simple_composer_env
+depends:
+  - name: inspec-gcp
+    git: https://github.com/inspec/inspec-gcp.git
+    tag: v0.10.0
+attributes:
+  - name: project_id
+    required: true
+    type: string
+  - name: region
+    required: true
+    type: string

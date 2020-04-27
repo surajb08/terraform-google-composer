@@ -41,3 +41,19 @@ suites:
           backend: gcp
           controls:
             - gcp
+  - name: simple_composer_env
+    driver:
+      root_module_directory: test/fixtures/simple_composer_env/
+    verifier:
+      color: true
+      systems:
+        - name: simple_composer local
+          backend: local
+          controls:
+            - gcloud
+            - composer
+        #     - gsutil
+        # - name: simple_example gcp
+        #   backend: gcp
+        #   controls:
+        #     - gcp
