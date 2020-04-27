@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-provider "google" {
-  version = "~> 2.0"
-}
+// provider "google" {
+//   version = "~> 2.0"
+// }
 
 module "composer" {
-  source = "../.."
+  source = "../../modules/storage_bucket"
 
   project_id  = var.project_id
   bucket_name = var.bucket_name
