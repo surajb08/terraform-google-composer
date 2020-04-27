@@ -12,6 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+require 'rspec/retry'
+
+RSpec.configure do |config|
+  config.verobse_retry = true
+  config.display_try_failure_messages = true
+end
+
 control "composer" do
   title "GCP Cloud Composer"
 
